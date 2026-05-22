@@ -1,0 +1,46 @@
+Error occurred while clicking on Register link: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('span:has-text("Register")')
+
+    at HomePage.clickOnRegister (C:\Users\31650\Desktop\Typescript - Playwright course\opencartPlaywright\pages\HomePage.ts:46:33)
+    at C:\Users\31650\Desktop\Typescript - Playwright course\opencartPlaywright\tests\AccountRegistration.spec.ts:40:24 {
+  [Symbol(step)]: {
+    location: {
+      file: 'C:\\Users\\31650\\Desktop\\Typescript - Playwright course\\opencartPlaywright\\pages\\HomePage.ts',
+      line: 46,
+      column: 33,
+      function: 'HomePage.clickOnRegister'
+    },
+    category: 'pw:api',
+    title: `Click locator('span:has-text("Register")')`,
+    apiName: 'locator.click',
+    params: { selector: 'span:has-text("Register")', strict: true, timeout: 0 },
+    group: undefined,
+    stepId: 'pw:api@35',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@35',
+      _title: `Click locator('span:has-text("Register")')`,
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1779349340775,
+    error: {
+      message: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('span:has-text("Register")')\x1B[22m\n`,
+      stack: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('span:has-text("Register")')\x1B[22m\n` +
+        '\n' +
+        '    at HomePage.clickOnRegister (C:\\Users\\31650\\Desktop\\Typescript - Playwright course\\opencartPlaywright\\pages\\HomePage.ts:46:33)\n' +
+        '    at C:\\Users\\31650\\Desktop\\Typescript - Playwright course\\opencartPlaywright\\tests\\AccountRegistration.spec.ts:40:24',
+      cause: undefined
+    }
+  }
+}

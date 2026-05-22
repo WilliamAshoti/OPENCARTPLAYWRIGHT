@@ -1,0 +1,400 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: AccountRegistration.spec.ts >> Should register a new account successfully
+- Location: tests\AccountRegistration.spec.ts:34:9
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.textContent: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('h1:has-text("Your Account Has Been Created!")')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - button "$ Currency " [ref=e7] [cursor=pointer]:
+        - strong [ref=e8]: $
+        - text: Currency
+        - generic [ref=e9]: 
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link "" [ref=e13] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/contact
+            - generic [ref=e14]: 
+          - text: "123456789"
+        - listitem [ref=e15]:
+          - link " My Account" [ref=e16] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/account
+            - generic [ref=e17]: 
+            - text: My Account
+        - listitem [ref=e19]:
+          - link " Wish List (0)" [ref=e20] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/wishlist
+            - generic [ref=e21]: 
+            - text: Wish List (0)
+        - listitem [ref=e22]:
+          - link " Shopping Cart" [ref=e23] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=checkout/cart
+            - generic [ref=e24]: 
+            - text: Shopping Cart
+        - listitem [ref=e25]:
+          - link " Checkout" [ref=e26] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=checkout/checkout
+            - generic [ref=e27]: 
+            - text: Checkout
+  - banner [ref=e28]:
+    - generic [ref=e30]:
+      - link "naveenopencart" [ref=e33] [cursor=pointer]:
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=common/home
+        - img "naveenopencart" [ref=e34]
+      - generic [ref=e36]:
+        - textbox "Search" [ref=e37]
+        - button "" [ref=e39] [cursor=pointer]:
+          - generic [ref=e40]: 
+      - button " 0 item(s) - $0.00" [ref=e43] [cursor=pointer]:
+        - generic [ref=e44]: 
+        - text: 0 item(s) - $0.00
+  - navigation [ref=e46]:
+    - generic: 
+    - list [ref=e48]:
+      - listitem [ref=e49]:
+        - link "Desktops" [ref=e50] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=20
+      - listitem [ref=e51]:
+        - link "Laptops & Notebooks" [ref=e52] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=18
+      - listitem [ref=e53]:
+        - link "Components" [ref=e54] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=25
+      - listitem [ref=e55]:
+        - link "Tablets" [ref=e56] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=57
+      - listitem [ref=e57]:
+        - link "Software" [ref=e58] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=17
+      - listitem [ref=e59]:
+        - link "Phones & PDAs" [ref=e60] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=24
+      - listitem [ref=e61]:
+        - link "Cameras" [ref=e62] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=33
+      - listitem [ref=e63]:
+        - link "MP3 Players" [ref=e64] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=34
+  - generic [ref=e65]:
+    - list [ref=e66]:
+      - listitem [ref=e67]:
+        - link "" [ref=e68] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=common/home
+          - generic [ref=e69]: 
+      - listitem [ref=e70]:
+        - link "Account" [ref=e71] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/account
+      - listitem [ref=e72]:
+        - link "Register" [ref=e73] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/register
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - heading "Register Account" [level=1] [ref=e76]
+        - paragraph [ref=e77]:
+          - text: If you already have an account with us, please login at the
+          - link "login page" [ref=e78] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/login
+          - text: .
+        - generic [ref=e79]:
+          - group "Your Personal Details" [ref=e80]:
+            - generic [ref=e81]: Your Personal Details
+            - text: "*"
+            - generic [ref=e82]:
+              - generic [ref=e83]: "* First Name"
+              - textbox "* First Name" [ref=e85]:
+                - /placeholder: First Name
+                - text: Ashly
+            - generic [ref=e86]:
+              - generic [ref=e87]: "* Last Name"
+              - textbox "* Last Name" [ref=e89]:
+                - /placeholder: Last Name
+                - text: Bins
+            - generic [ref=e90]:
+              - generic [ref=e91]: "* E-Mail"
+              - textbox "* E-Mail" [ref=e93]:
+                - /placeholder: E-Mail
+                - text: luella.towne@example.com
+            - generic [ref=e94]:
+              - generic [ref=e95]: "* Telephone"
+              - generic [ref=e96]:
+                - textbox "* Telephone" [ref=e97]:
+                  - /placeholder: Telephone
+                - generic [ref=e98]: Telephone must be between 3 and 32 characters!
+          - group "Your Password" [ref=e99]:
+            - generic [ref=e100]: Your Password
+            - generic [ref=e101]:
+              - generic [ref=e102]: "* Password"
+              - textbox "* Password" [ref=e104]:
+                - /placeholder: Password
+                - text: (732) 843-9022 x61653Au5uwvXGRYBgnl1
+            - generic [ref=e105]:
+              - generic [ref=e106]: "* Password Confirm"
+              - generic [ref=e107]:
+                - textbox "* Password Confirm" [ref=e108]:
+                  - /placeholder: Password Confirm
+                  - text: Au5uwvXGRYBgnl1
+                - generic [ref=e109]: Password confirmation does not match password!
+          - group "Newsletter" [ref=e110]:
+            - generic [ref=e111]: Newsletter
+            - generic [ref=e112]:
+              - generic [ref=e113]: Subscribe
+              - generic [ref=e114]:
+                - generic [ref=e115] [cursor=pointer]:
+                  - radio "Yes" [ref=e116]
+                  - text: "Yes"
+                - generic [ref=e117] [cursor=pointer]:
+                  - radio "No" [checked] [ref=e118]
+                  - text: "No"
+          - generic [ref=e119]:
+            - text: I have read and agree to the
+            - link "Privacy Policy" [ref=e120] [cursor=pointer]:
+              - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information/agree&information_id=3
+            - checkbox [checked] [ref=e121]
+            - button "Continue" [ref=e122] [cursor=pointer]
+      - complementary [ref=e123]:
+        - generic [ref=e124]:
+          - link "Login" [ref=e125] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/login
+          - link "Register" [ref=e126] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/register
+          - link "Forgotten Password" [ref=e127] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/forgotten
+          - link "My Account" [ref=e128] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/account
+          - link "Address Book" [ref=e129] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/address
+          - link "Wish List" [ref=e130] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/wishlist
+          - link "Order History" [ref=e131] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/order
+          - link "Downloads" [ref=e132] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/download
+          - link "Recurring payments" [ref=e133] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/recurring
+          - link "Reward Points" [ref=e134] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/reward
+          - link "Returns" [ref=e135] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/return
+          - link "Transactions" [ref=e136] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/transaction
+          - link "Newsletter" [ref=e137] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/newsletter
+  - contentinfo [ref=e138]:
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - generic [ref=e141]:
+          - heading "Information" [level=5] [ref=e142]
+          - list [ref=e143]:
+            - listitem [ref=e144]:
+              - link "About Us" [ref=e145] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=4
+            - listitem [ref=e146]:
+              - link "Delivery Information" [ref=e147] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=6
+            - listitem [ref=e148]:
+              - link "Privacy Policy" [ref=e149] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=3
+            - listitem [ref=e150]:
+              - link "Terms & Conditions" [ref=e151] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=5
+        - generic [ref=e152]:
+          - heading "Customer Service" [level=5] [ref=e153]
+          - list [ref=e154]:
+            - listitem [ref=e155]:
+              - link "Contact Us" [ref=e156] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/contact
+            - listitem [ref=e157]:
+              - link "Returns" [ref=e158] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/return/add
+            - listitem [ref=e159]:
+              - link "Site Map" [ref=e160] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/sitemap
+        - generic [ref=e161]:
+          - heading "Extras" [level=5] [ref=e162]
+          - list [ref=e163]:
+            - listitem [ref=e164]:
+              - link "Brands" [ref=e165] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/manufacturer
+            - listitem [ref=e166]:
+              - link "Gift Certificates" [ref=e167] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/voucher
+            - listitem [ref=e168]:
+              - link "Affiliate" [ref=e169] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=affiliate/login
+            - listitem [ref=e170]:
+              - link "Specials" [ref=e171] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/special
+        - generic [ref=e172]:
+          - heading "My Account" [level=5] [ref=e173]
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - link "My Account" [ref=e176] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/account
+            - listitem [ref=e177]:
+              - link "Order History" [ref=e178] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/order
+            - listitem [ref=e179]:
+              - link "Wish List" [ref=e180] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/wishlist
+            - listitem [ref=e181]:
+              - link "Newsletter" [ref=e182] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/newsletter
+      - separator [ref=e183]
+      - paragraph [ref=e184]:
+        - text: Powered By
+        - link "OpenCart" [ref=e185] [cursor=pointer]:
+          - /url: http://www.opencart.com
+        - text: naveenopencart © 2026
+```
+
+# Test source
+
+```ts
+  1   | import { Page, Locator, expect } from '@playwright/test';
+  2   | 
+  3   | export class RegistrationPage {
+  4   |     private readonly page: Page;
+  5   |     
+  6   |     // Locators using CSS selectors
+  7   |     private readonly txtFirstname: Locator;
+  8   |     private readonly txtLastname: Locator;
+  9   |     private readonly txtEmail: Locator;
+  10  |     private readonly txtTelephone: Locator;
+  11  |     private readonly txtPassword: Locator;
+  12  |     private readonly txtConfirmPassword: Locator;
+  13  |     private readonly chkdPolicy: Locator;
+  14  |     private readonly btnContinue: Locator;
+  15  |     private readonly msgConfirmation: Locator;
+  16  | 
+  17  |     constructor(page: Page) {
+  18  |         this.page = page;
+  19  |         
+  20  |         // Initialize locators with CSS selectors
+  21  |         this.txtFirstname = page.locator('#input-firstname');
+  22  |         this.txtLastname = page.locator('#input-lastname');
+  23  |         this.txtEmail = page.locator('#input-email');
+  24  |         this.txtTelephone = page.locator('#input-telephone');
+  25  |         this.txtPassword = page.locator('#input-password');
+  26  |         this.txtConfirmPassword = page.locator('#input-confirm');
+  27  |         this.chkdPolicy = page.locator('input[name="agree"]');
+  28  |         this.btnContinue = page.locator('input[value="Continue"]');
+  29  |         this.msgConfirmation = page.locator('h1:has-text("Your Account Has Been Created!")');
+  30  |     }
+  31  | 
+  32  |     /**
+  33  |      * Sets the first name in the registration form
+  34  |      * @param fname - First name to enter
+  35  |      */
+  36  |     async setFirstName(fname: string): Promise<void> {
+  37  |         await this.txtFirstname.fill(fname);
+  38  |     }
+  39  | 
+  40  |     /**
+  41  |      * Sets the last name in the registration form
+  42  |      * @param lname - Last name to enter
+  43  |      */
+  44  |     async setLastName(lname: string): Promise<void> {
+  45  |         await this.txtLastname.fill(lname);
+  46  |     }
+  47  | 
+  48  |     /**
+  49  |      * Sets the email in the registration form
+  50  |      * @param email - Email to enter
+  51  |      */
+  52  |     async setEmail(email: string): Promise<void> {
+  53  |         await this.txtEmail.fill(email);
+  54  |     }
+  55  | 
+  56  |     /**
+  57  |      * Sets the telephone number in the registration form
+  58  |      * @param tel - Telephone number to enter
+  59  |      */
+  60  |     async setTelephone(tel: string): Promise<void> {
+  61  |         await this.txtTelephone.fill(tel);
+  62  |     }
+  63  | 
+  64  |     /**
+  65  |      * Sets the password in the registration form
+  66  |      * @param pwd - Password to enter
+  67  |      */
+  68  |     async setPassword(pwd: string): Promise<void> {
+  69  |         await this.txtPassword.fill(pwd);
+  70  |     }
+  71  | 
+  72  |     /**
+  73  |      * Sets the confirm password in the registration form
+  74  |      * @param pwd - Password to confirm
+  75  |      */
+  76  |     async setConfirmPassword(pwd: string): Promise<void> {
+  77  |         await this.txtConfirmPassword.fill(pwd);
+  78  |     }
+  79  | 
+  80  |     /**
+  81  |      * Checks the privacy policy checkbox
+  82  |      */
+  83  |     async setPrivacyPolicy(): Promise<void> {
+  84  |         await this.chkdPolicy.check();
+  85  |     }
+  86  | 
+  87  |     /**
+  88  |      * Clicks the Continue button
+  89  |      */
+  90  |     async clickContinue(): Promise<void> {
+  91  |         await this.btnContinue.click();
+  92  |     }
+  93  | 
+  94  |     /**
+  95  |      * Gets the confirmation message text
+  96  |      * @returns Promise<string> - Confirmation message text
+  97  |      */
+  98  |     async getConfirmationMsg(): Promise<string> {
+> 99  |         return await this.msgConfirmation.textContent() ?? '';
+      |                                           ^ Error: locator.textContent: Test timeout of 30000ms exceeded.
+  100 |     }
+  101 | 
+  102 |     /**
+  103 |      * Complete registration workflow
+  104 |      * @param userData - Object containing registration data
+  105 |      */
+  106 |     async completeRegistration(userData: {
+  107 |         firstName: string;
+  108 |         lastName: string;
+  109 |         email: string;
+  110 |         telephone: string;
+  111 |         password: string;
+  112 |     }): Promise<void> {
+  113 |         await this.setFirstName(userData.firstName);
+  114 |         await this.setLastName(userData.lastName);
+  115 |         await this.setEmail(userData.email);
+  116 |         await this.setTelephone(userData.telephone);
+  117 |         await this.setPassword(userData.password);
+  118 |         await this.setConfirmPassword(userData.password);
+  119 |         await this.setPrivacyPolicy();
+  120 |         await this.clickContinue();
+  121 |         await expect(this.msgConfirmation).toBeVisible();
+  122 |     }
+  123 | }
+  124 | 
+```
