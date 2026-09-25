@@ -35,7 +35,7 @@ data downloadt die deze drie providers zelf gratis vrijgeven.
 | [Fantasy Football Scout](https://www.fantasyfootballscout.co.uk/2024/09/07/a-guide-to-the-statsbomb-stats-in-our-premium-members-area) | StatsBomb, vijf extra tabbladen met spelerstatistieken | Alleen achter de betaalmuur (Premium Members) | Nee. Scrapen van het ledengedeelte schendt de voorwaarden |
 | [StatsBomb Stats Portal](https://stats-portal.statsbomb.com/) | StatsBomb Live Data | Ja, openbaar | Alleen uitslagen en eindstatistieken voor gokmarkten (schoten, schoten op doel, assists, passes, tackles, overtredingen), pas na de controle na afloop. Geen events of coördinaten. Hudl-voorwaarden verbieden geautomatiseerde toegang |
 | Bookmakers met bet builders (bijv. [Betfred](https://insights.betfred.com/education/how-does-a-bet-builder-work-statsbomb-stats-explained/)) | StatsBomb, gebruikt om weddenschappen af te rekenen | Alleen quoteringen | Nee |
-| Wyscout-analisten op X (radars, scatterplots) | Wyscout met een individueel abonnement | Alleen de visualisaties | Nee. Ze exporteren zelf naar Excel via *Advanced Search → Export to Excel* ([uitleg](https://themastermindsite.com/2022/09/01/how-to-use-wyscout-for-successful-football-analysis/)) |
+| Wyscout-analisten op X (radars, scatterplots) | Wyscout met een abonnement dat Advanced Search bevat (Gold/Diamond, of via club of opleiding) | Alleen de visualisaties | Nee. Ze exporteren zelf naar Excel via *Advanced Search → Export to Excel* ([uitleg](https://themastermindsite.com/2022/09/01/how-to-use-wyscout-for-successful-football-analysis/)). De goedkope online-pakketten hebben die functie niet |
 | [Twelve Football](https://twelve.football) | Wyscout, StatsBomb, IMPECT, Stats Perform, SkillCorner | Deels, in een betaalde app | Nee |
 | IMPECT ([@impect_official](https://x.com/impect_official)) | Eigen data. Clubs en bonden (150+ clubs); sinds oktober 2025 van [Catapult](https://www.sportspro.com/news/catapult-impect-soccer-scouting-technology-acquisition-october-2025/) | Alleen rankings in social posts | Nee. Geen publieke datasite, geen widgets |
 
@@ -108,12 +108,21 @@ achter een login. Een open feed zoals de Opta-widgets bestaat daardoor niet.
 
 ### Betaalde routes zonder te scrapen
 
-- **Wyscout, individueel abonnement:** vanaf ongeveer €299 per jaar (Copper) of
-  €399 (Mercury), volgens [360 Scouting](https://360scouting.com/wyscout-alternatives/);
-  actuele prijzen staan op [Hudl pricing](https://www.hudl.com/en_gb/products/wyscout/pricing).
-  Dit is de goedkoopste legale route naar actuele Wyscout-data, via de export
-  naar Excel. Controleer in de voorwaarden van je plan of je visualisaties mag
-  publiceren.
+- **Wyscout:** de pakketten die je online koopt zijn Copper (ongeveer €299 per
+  jaar, 70 minuten clips per maand) en Mercury (ongeveer €399, 170 minuten)
+  ([Hudl pricing](https://www.hudl.com/en_gb/products/wyscout/pricing),
+  [360 Scouting](https://360scouting.com/wyscout-alternatives/)). **Die bevatten
+  geen Advanced Search en dus geen Excel-export**, en ook geen volledige
+  wedstrijden, downloads of rankings. Een gebruiker kreeg voor ~£300 per jaar
+  alleen clips en geen data. Voor data/API kreeg hij een offerte van circa £5.000
+  per competitie per jaar ([bron](https://x.com/playingsquirrel/status/1800808636698218604)).
+  Advanced Search met Excel-export zit in Gold en Diamond; die prijzen zijn
+  alleen op aanvraag via sales. Publiceren mag volgens het
+  [Journalists and Media Policy](https://www.hudl.com/legal/wyscout/journalists-media-policy)
+  alleen beperkt: maximaal 15% van elk rapport, altijd met bronvermelding
+  "Wyscout S.p.A.". Vraag bij de offerte schriftelijk na of je visualisaties
+  op social media mag plaatsen. Studenten kunnen via hun opleiding soms gratis
+  toegang krijgen (Wyscout Education).
 - **StatsBomb:** er is geen plan voor particulieren. Toegang voor onderzoek
   loopt via [Hudl Performance Insights](https://www.hudl.com/blog/hpi-2026-research-competition):
   geaccepteerde voorstellen krijgen vijf competitie-seizoenen event- en 360-data.
